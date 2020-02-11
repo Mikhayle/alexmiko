@@ -435,7 +435,6 @@ button {
 	outline: none !important;
 	cursor: pointer;
 	transition: background-color 0.5s ease, color 0.5s ease;
-
 }
 
 .btn-call-back:hover {
@@ -443,7 +442,6 @@ button {
 	color: #fff; 
 	box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 	transition: background-color 0.5s ease, color 0.5s ease;
-
 }
 
 .btn-call-back:active {
@@ -469,7 +467,6 @@ button {
 	transition: box-shadow 0.3s ease;
 }
 
-
 .visit-card {
 	max-width: 725px;
 	margin-top: 212px;
@@ -486,7 +483,6 @@ button {
 	color: #8993ad;
 	margin-top: 17px;
 }
-
 
 .visit-card-mini {
 	display: none;
@@ -540,8 +536,6 @@ button {
 	margin: 28px auto 0;
 }
 
-
-
 .selfy {
 	width: 450px;
 	max-height: 637px;
@@ -567,11 +561,9 @@ button {
 	align-items: center;
 }
 
-.work {
-	
+.work {	
 	min-height: 640px;
-	text-align: center;
-	
+	text-align: center;	
 }
 
 .title {
@@ -587,8 +579,6 @@ button {
 	width: 100%;
 	margin-top: 43px;
 }
-
-
 
 .work-block__item {
 	width: 270px;
@@ -620,39 +610,73 @@ button {
 	.examples > .flex {
 		flex-direction: column;
 		align-items: center;
+		position: relative;
 	}
 
 	.swiper-container {
-		width: 100%;
+		width: 100%;		
 	}
 
-		
 		.slider__arrow {
 			border-radius: 50%;
 			box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
 			cursor: pointer;
 			position: absolute;
 			z-index: 10;
+			outline: none;
 		}
 
 		.slider__arrow_left {
-			left: 2px;
-			top: 154px;
+			left: -10px;
+			top: 335px;
 		}
 
 		.slider__arrow_right {
-			right: 2px;
-			top: 154px;
+			right: -10px;
+			top: 335px;
 		}
 
-		.slider__text {
-			
+		.slider__text {			
 			padding-top: 30px;
 			color: #8993ad;
 			font-size: 20px;
 			font-weight: 500;
 		}
 
+		.swiper-pagination-bullet {
+			width: 12px !important;
+			height: 12px !important;
+		}
+
+		.swiper-pagination-bullet-active {
+			background: linear-gradient(13deg, #ff8f5a, #ff2f96) !important;
+		}
+
+		.swiper-container {
+		    width: 100%;
+		    height: 450px;
+		    margin: 20px auto 28px;
+
+	    }
+	    .swiper-slide {
+		    text-align: center;
+		    font-size: 18px;
+		    background: #fbfbfb;
+
+		    /* Center slide text vertically */
+		    display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: -webkit-flex;
+		    display: flex;
+		    -webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		    -webkit-justify-content: center;
+		    justify-content: center;
+		    -webkit-box-align: center;
+		    -ms-flex-align: center;
+		    -webkit-align-items: center;
+		    align-items: center;
+	    }
 
 
 .price {		
@@ -798,30 +822,6 @@ footer > .flex {
 
 
 
- .swiper-container {
-      width: 100%;
-      height: 450px;
-      margin: 20px auto 28px;
-
-    }
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #fbfbfb;
-
-      /* Center slide text vertically */
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: -webkit-flex;
-      display: flex;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      -webkit-justify-content: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      align-items: center;
-    }
+ 
 
    
