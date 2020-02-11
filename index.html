@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello.css">
+	<link rel="stylesheet" type="text/css" href="css/fontello-embedded.css">
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script defer src="js/all.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/jquery-input-mask-phone-number.min.js"></script>
+	<title>Персональная страница</title>
+</head>
+<body>
+	<header class="page_grey">
+		<div class="bg-container bg-container_heading">				
+			<!-- картинка фона -->
+			<svg xmlns="http://www.w3.org/2000/svg" width="814" height="630" viewBox="0 0 814 630" class="bg-figure">
+				<defs>
+					<linearGradient id="whcea" x1="371.97" x2="548.51" y1="763.68" y2=".74" gradientUnits="userSpaceOnUse">
+						<stop offset="0" stop-color="#ff8f5a"/>
+						<stop offset=".99" stop-color="#ff2f96"/>
+						<stop offset="1" stop-color="#ff2f96"/>
+					</linearGradient>
+				</defs>
+				<g>
+					<g clip-path="url(#clip-2)">
+						<path fill="#6055c4" d="M395.52 40.407C502.261-10.05 602.994-10.204 687.212 27.67c84.435 37.567 152.356 113.165 198.491 207.114 44.27 94.884 44.223 196.799 8.068 279.242-36.656 83.673-97.666 146.755-180.805 191.777-44.03 22.669-90.312 38.198-149.148 47.731-58.06 9.394-128.676 12.79-203.493 7.944-148.474-9.32-314.876-53.081-349.967-151.79-19.887-49.012-7.404-105.197 17.32-161.739 25.13-56.624 62.503-113.604 101.74-166.115 39.645-52.593 81.155-100.717 123.891-141.53C296.45 99.41 340.817 65.828 395.52 40.408z"/>
+						<path fill="url(#whcea)" d="M395.52 40.407C502.261-10.05 602.994-10.204 687.212 27.67c84.435 37.567 152.356 113.165 198.491 207.114 44.27 94.884 44.223 196.799 8.068 279.242-36.656 83.673-97.666 146.755-180.805 191.777-44.03 22.669-90.312 38.198-149.148 47.731-58.06 9.394-128.676 12.79-203.493 7.944-148.474-9.32-314.876-53.081-349.967-151.79-19.887-49.012-7.404-105.197 17.32-161.739 25.13-56.624 62.503-113.604 101.74-166.115 39.645-52.593 81.155-100.717 123.891-141.53C296.45 99.41 340.817 65.828 395.52 40.408z"/>
+					</g>
+				</g>
+			</svg>
+			<!-- конец картинки фона -->
+
+			<!-- вылетающие символы -->
+			<div class="birds birds_heading birds__bird1 birds__bird1_heading">{&nbsp;}</div>
+			<div class="birds birds_heading birds__bird2 birds__bird2_heading">&lt;div&gt;</div>	
+			<div class="birds birds_heading birds__bird3 birds__bird3_heading">#</div>
+			<div class="birds birds_heading birds__bird4 birds__bird4_heading">&lt;div&gt;</div>
+			<div class="birds birds_heading birds__bird5 birds__bird5_heading">&lt;/&gt;</div>		
+			
+		<div class="fixed-container flex">
+			<div class="header-bar">	
+				<nav class="menu_heading">
+					<ul class="list">
+						<li class="list__item_heading"><a class="list__link list__link_heading" href="#work">Услуги</a></li>
+						<li class="list__item_heading"><a class="list__link list__link_heading list__link_active" href="#examples">Портфолио</a></li>
+						<li class="list__item_heading"><a class="list__link list__link_heading" href="#price">Стоимость</a></li>
+					</ul>
+					
+					<button class="burger"></button>
+					
+					<button class="close">
+						<div class="close__1"></div>
+						<div class="close__2"></div>
+					</button>
+								
+					<div class="menu_mini">
+						<ul class="list_mini">
+							<li class="list__item_mini"><a class="list__link_mini" href="#work">Услуги</a></li>
+							<li class="list__item_mini"><a class="list__link_mini" href="#examples">Портфолио</a></li>
+							<li class="list__item_mini"><a class="list__link_mini" href="#price">Стоимость</a></li>
+						</ul>
+					</div>
+				</nav>
+
+				<div class="contacts contacts_heading">
+					<a href="tel:+79110349728">+7 (911) 034-97-28</a>
+					<button class="btn-call-back btn-call-back_heading" data-toggle="modal" data-target="#call-back">Заказать звонок</button>
+					<img src="img/call_back_button.png" alt="Заказать обратный звонок" class="btn-call-back_mini" data-toggle="modal" data-target="#call-back">
+				</div>
+			</div>
+			<div class="visit-card">
+				<div class="visit-card__name">
+					Александр Михайлё
+				</div>
+				<div class="visit-card__profession">
+					Frontend-разработчик и веб-верстальщик
+				</div>
+				<button class="btn-main btn-main_heading" data-toggle="modal" data-target="#feedback">Узнать больше</button>
+			</div>
+			<div class="selfy">
+				<img src="img/foto.png" alt="Михайлё Александр" class="selfy__my-foto">
+				<img src="img/foto_320.png" alt="Михайлё Александр" class="selfy__my-foto_320">
+			</div>
+		</div>		
+	</header>
+
+	<!-- Окно обрвтный звонок -->
+
+	<div class="modal fade" id="call-back" tabindex="-1" role="dialog" aria-labelledby="call-back__title" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="call-back__title">Заказать обратный звонок</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form action="headler.php" method="post" target="area">
+	        	<label for="name">Ваше Имя</label>
+	        	<input class="form-control" type="text" name="name" id="name">
+	        	<label for="telephone">Номер телефона</label>
+	        	<input class="form-control phone" type="text" name="name" id="telephone" maxlength="14" placeholder="(***)***-****">
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Закрыть</button>
+	        <button type="submit" class="btn btn-outline-danger" data-dismiss="modal" value="Отправить">Отправить</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- the end -->
+
+	<!-- Окно обратной связи с комментариями -->
+
+	<div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="feedback__title" aria-hidden="true">
+	  <div class="modal-dialog modal-dialog-centered" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <h5 class="modal-title" id="feedback__title">Обратная связь</h5>
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	          <span aria-hidden="true">&times;</span>
+	        </button>
+	      </div>
+	      <div class="modal-body">
+	        <form action="hedler.php" method="get">
+	        	<label for="name">Ваше Имя</label>
+	        	<input class="form-control" type="text" name="name" id="name"><br>
+	        	<label for="email">E-mail</label>
+	        	<input class="form-control" type="email" name="email" id="email" placeholder="name@mail.ru"><br>
+	        	<label for="telephone">Номер телефона</label>
+	        	<input class="form-control phone" type="text" name="name" id="telephone" maxlength="14" placeholder="(***)***-****"><br>
+				<label>Предпочитаемый вид связи</label><br>
+				<div class="form-check form-check-inline">
+		        	<div class="col">
+		        		<input class="form-check-inline" id="phone-connect" type="checkbox" name="type-of-connect" value="По телефону">
+		        		<label class="form-check-label" for="phone-connect">Звонок</label>
+		        	</div>
+		        	<div class="col">	
+		        		<input class="form-check-inline" id="email-connect" type="checkbox" name="type-of-connect" value="По электронной почте">
+		        		<label for="email-connect">E-mail</label>
+					</div>
+				</div>
+	        	<br><br><label for="comment">Комментарий</label>
+	        	<textarea class="form-control" name="comments" id="comment" cols="30" rows="10"></textarea>
+
+	        </form>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">Закрыть</button>
+	        <button type="submit" class="btn btn-outline-danger" data-dismiss="modal" value="Отправить">Отправить</button>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- the end -->
+	
+	<main>
+		<section id="work" class="work">
+			<div class="fixed-container flex">
+				<div class="visit-card-mini">
+					<div class="visit-card-mini__name_mini">
+						Александр Михайлё
+					</div>
+					<div class="visit-card-mini__profession_mini">
+						Frontend-разработчик и веб-верстальщик
+					</div>
+					<button class="btn-main btn-main_mini" data-toggle="modal" data-target="#feedback">Узнать больше</button>
+				</div>
+
+				<h2 class="title">Что я делаю</h2>
+				<div class="work-block flex">
+					<div class="work-block__item">
+						<img src="img/work-pic.png" alt="Вёрстка" class="work-block__pic">
+						<img src="img/work-pic-1_320.png" alt="Вёрстка" class="work-block__pic_320">
+						<div class="work-block__text">
+							Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности
+						</div>
+					</div>
+					<div class="work-block__item">
+						<img src="img/work-pic-2.png" alt="Вёрстка" class="work-block__pic">
+						<img src="img/work-pic-2_320.png" alt="Вёрстка" class="work-block__pic_320">
+						<div class="work-block__text">
+							Адаптивная&nbsp;вёрстка&nbsp;под&nbsp;все браузеры и устройства	
+						</div>
+					</div>
+					<div class="work-block__item">
+						<img src="img/work-pic-3.png" alt="Вёрстка" class="work-block__pic">
+						<img src="img/work-pic-3_320.png" alt="Вёрстка" class="work-block__pic_320">
+						<div class="work-block__text">
+							Frontend–разработка и программирование
+						</div>
+					</div>
+					<div class="work-block__item">
+						<img src="img/work-pic-4.png" alt="Вёрстка" class="work-block__pic">
+						<img src="img/work-pic-4_320.png" alt="Вёрстка" class="work-block__pic_320">
+						<div class="work-block__text">
+							Исправление и доработка существующей вёрстки
+						</div>
+					</div>
+				</div>
+				<div class="btn-wrapper">
+					<div class="btn-main btn-main_work" data-toggle="modal" data-target="#feedback">Узнать стоимость</div>
+				</div>	
+			</div>
+			</div>
+		</section>
+		<section id="examples" class="examples page_grey">
+			<div class="fixed-container flex">
+				<h2 class="title">Примеры моих работ</h2>
+				
+				<!-- Swiper -->
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				      <div class="swiper-slide">
+				      	<figure>
+					      	<img src="img/examples-pi-1.png" alt="пример моих работ" class="slider__picture">
+					      	<figcaption class="slider__text">
+								Сайт психолога Веры Антоновой
+							</figcaption>
+						</figure>
+				      </div>
+				      <div class="swiper-slide">
+				      	<figure>
+							<img src="img/examples-pic-2.png" alt="пример моих работ" class="slider__picture">
+							<figcaption class="slider__text">
+								Сайт магазина детской одежды
+							</figcaption>
+						</figure>
+				      </div>
+				      <div class="swiper-slide">
+				      	<figure>
+							<img src="img/examples-pic-3.png" alt="пример моих работ" class="slider__picture">
+							<figcaption class="slider__text">
+								Сайт магазина «Рыболов»
+							</figcaption>
+						</figure>
+				      </div>
+				    </div>
+				    <!-- Add Pagination -->
+				    <div class="swiper-pagination"></div>
+				    <!-- Add Arrows -->
+				    <div class="">
+				    	<img src="img/arrow_right.png" alt="влево" class="slider__arrow slider__arrow_right">
+				    </div>
+				    <div class="">
+				    	<img src="img/arrow_left.png" alt="влево" class="slider__arrow slider__arrow_left">
+				    </div>
+				</div>
+				  
+				<div class="btn-wrapper">
+					<div class="btn-main" data-toggle="modal" data-target="#feedback">Заказать проект</div>
+				</div>	
+			</div>
+		</section>
+		<section id="price" class="price">
+			<div class="bg-container">
+				<div class="birds birds_price birds__bird1 birds__bird1_price">{&nbsp;}</div>
+				<div class="birds birds_price birds__bird2 birds__bird2_price">&lt;div&gt;</div>	
+				<div class="birds birds_price birds__bird3 birds__bird3_price">#</div>
+				<div class="birds birds_price birds__bird4 birds__bird4_price">&lt;div&gt;</div>
+				<div class="birds birds_price birds__bird5 birds__bird5_price">{ }</div>
+				
+				<div class="fixed-container">
+					<div class="price__topic">
+					Адаптивная вёрстка под&nbsp;все&nbsp;устройства и&nbsp;браузеры от&nbsp;1000 рублей всего за&nbsp;4&nbsp;часа.*
+					</div>
+					<div class="price__options">
+						<span>*</span> Срок и стоимость могут&nbsp;отличаться от&nbsp;заявленных и&nbsp;рассчитываются  индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="fixed-container flex">
+			<div class="menu_footer">
+				<ul class="list">
+					<li class="list__item_footer"><a class="list__link list__link_footer" href="#work">Услуги</a></li>
+					<li class="list__item_footer"><a class="list__link list__link_footer" href="#examples">Портфолио</a></li>
+					<li class="list__item_footer"><a class="list__link list__link_footer" href="#price">Стоимость</a></li>
+				</ul>
+			</div>
+			<div class="contacts contacts_footer">
+				<div class="contacts__tel-number">
+					<a href="tel:+79110349728">+7 (911) 034-97-28</a>
+				</div>
+				<div class="contacts__email">
+					<a href="mailto:mr.coctail@mail.ru?subject=Предложение по работе">mr.coctail@mail.ru</a>
+				</div>
+			</div>
+			<div class="social-media">
+				<button class="btn-call-back" data-toggle="modal" data-target="#call-back">Заказать звонок</button>
+				<button class="btn-main" data-toggle="modal" data-target="#call-back">Заказать звонок</button>
+				<div class="icons flex">
+					<a href="https://vk.com/mikhaylyo"><div class="icons__vk"></div></a>
+					<a href="https://www.facebook.com/profile.php?id=100006789346859"><div class="icons__fb"></div></a>
+					<div class="icons__twitter"></div>
+					<a href="https://www.instagram.com/amiko12/"><div class="icons__insta"></div></a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<div class="copyright">
+		<div class="fixed-container">
+			<span>© Александр Михайлё, 2020</span>
+		</div>
+	</div>
+
+
+ <!-- Swiper -->
+
+  <!-- Swiper JS -->
+  <script src="js/swiper.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      slidesPerGroup: 1,
+      loop: true,
+     
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.slider__arrow_right',
+        prevEl: '.slider__arrow_left',
+      },
+      breakpoints: {
+      	850: {
+      		slidesPerView: 2,
+      		spaceBetween: 30
+      	},
+
+      	1200: {
+      		slidesPerView: 3,
+      		spaceBetween: 30
+      	}
+      },
+      
+    });
+
+   
+  </script>
+	<script src="bootstrap/bootstrap.min.js"></script>
+
+</body>
+</html>
