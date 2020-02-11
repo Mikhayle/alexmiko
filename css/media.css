@@ -1,0 +1,685 @@
+@media screen and (max-width: 1810px) {
+	.selfy__my-foto {
+		margin-left: 0;
+	}
+
+@keyframes bird1 {
+  0% {
+    top: 340px;
+	    left: 740px;
+  }  
+  100% {
+    top: 159px;
+    	left: 77px;
+  }
+}
+
+@keyframes bird2 {
+  0% {
+    top: 340px;
+	    left: 740px;
+  }  
+  100% {
+    top: 153px;
+    	left: 888px;
+  }
+}
+
+@keyframes bird3 {
+  0% {
+    top: 340px;
+	    left: 740px;
+  }  
+  100% {
+    top: 639px;
+    	left: 58px;
+  }
+}
+
+@keyframes bird4 {
+  0% {
+    top: 340px;
+	    left: 740px;
+  }  
+  100% {
+    top: 588px;
+    	left: 361px;
+  }
+}
+
+@keyframes bird5 {
+  0% {
+    top: 340px;
+	    left: 740px;
+  }  
+  100% {
+    top: 240px;
+    	left: 423px;
+  }
+}
+}
+
+@media screen and (max-width: 1600px) {
+	.bg-container {
+		background-position: 660px bottom;
+	}
+
+	.visit-card__name {
+		font-size: 50px;
+	}
+}
+
+@media screen and (max-width: 1520px) {
+
+@keyframes birdprice3 {
+  0% {
+    top: 0px;
+	    left: 0px;
+  }  
+  100% {
+    top: 260px;
+    	left: 150px;
+  }
+}
+
+}
+
+@media screen and (max-width: 1340px) {
+
+	@keyframes birdprice1 {
+  0% {
+    top: 0px;
+	    left: 0px;
+  }  
+  100% {
+    top: 65px;
+    	left: 28px;
+  }
+}
+
+@keyframes birdprice2 {
+  0% {
+    top: 0px;
+	    left: 0px;
+  }  
+  100% {
+    top: 81px;
+    	right: 108px;
+  }
+}
+
+@keyframes birdprice3 {
+  0% {
+    top: 0px;
+	    left: 0px;
+  }  
+  100% {
+    top: 260px;
+    	left: 50px;
+  }
+}
+
+}
+
+@media screen and (max-width: 1200px) {
+	.bg-figure {
+		right: -100px;
+	}
+
+	.price {
+		font-size: 45px;
+	}
+
+	.menu_heading .list {
+		display: none;
+	}
+
+	.burger {
+		display: inline-block;
+	}
+
+	.fixed-container {
+		padding: 0 40px;
+	}
+
+	.bnt-main {
+		margin-top: 46px;
+		width: 320px;
+		height: 68px;
+	}
+
+	.slider__arrow {
+		display: none;
+	}
+
+	.slider {
+		justify-content: space-around;
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.work > .fixed-container {
+		padding: 0 185px;
+	}
+
+	.work-block__item:nth-child(3) {
+		margin-top: 86px;
+	}
+
+	.work-block__item:nth-child(4) {
+		margin-top: 86px;
+	}
+
+	@keyframes birdprice1 {
+	  0% {
+	    top: 0px;
+		    left: 0px;
+	  }  
+	  100% {
+	    top: 24px;
+	    	left: 155px;
+	  }
+	}
+
+	@keyframes birdprice3 {
+	  0% {
+	    top: 0px;
+		    left: 0px;
+	  }  
+	  100% {
+	    top: 292px;
+	    	right: 93px;
+	  }
+	}
+	@keyframes birdprice4 {
+	  0% {
+	    top: 0px;
+		    left: 0px;
+	  }  
+	  100% {
+	    top: 306px;
+	    	right: 453px;
+	  }
+	}
+
+	.birds__bird2_price {
+		display: none;
+	}
+
+	.birds__bird5_price {
+		display: none;
+	}
+
+	.birds__bird1_price {
+		font-size: 29px;
+	}
+
+	.birds__bird4_price {
+		font-size: 23px;
+	}
+
+	.birds__bird3_price {
+		font-size: 38px;
+	}
+
+}
+
+@media screen and (max-width: 1090px) {
+	.bg-container_heading {
+		background-image: url(../img/Ellipse_1_1024.svg);
+		background-position: right bottom;
+		background-repeat: no-repeat;
+	}
+
+	.bg-figure {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1020px) {
+	.visit-card__name {
+		font-size: 45px;
+	}
+
+	.visit-card__profession {
+		font-size: 20px;
+	}
+
+	.btn-main {
+		width: 280px;
+		height: 55px;
+	}
+
+	.slider__item:nth-child(1) {
+		display: none;
+	}
+
+	.slider {
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.birds__bird2 {
+		display: none;
+	}
+	
+	.price__topic {
+		font-size: 40px;
+	}
+	
+	.visit-card__name {
+		font-size: 40px;
+	}
+
+	.visit-card__profession {
+		font-size: 18px;
+	}
+
+	@keyframes bird4 {
+  0% {
+    top: 340px;
+	    left: 740px;
+  }  
+  100% {
+    top: 153px;
+    	left: 750px;
+  }
+}
+} 
+
+@media screen and (max-width: 915px) {
+	.visit-card__name {
+		font-size: 35px;
+	}
+
+	.visit-card__profession {
+		font-size: 16px;
+	}
+
+	.work > .fixed-container {
+		padding: 0 40px;
+	}
+
+	.work-block {
+		justify-content: space-around;
+	}
+
+	.birds__bird3_price {
+		display: none;
+	}
+
+	.birds__bird4_price {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 865px) {
+	.visit-card {
+		display: none;
+	}
+
+	.selfy {
+		margin: 55px auto 0;
+	}
+
+	.visit-card-mini {
+		display: block;
+	}
+
+	.birds__bird5 {
+		display: none;
+	}
+
+	.work-block {
+		margin-top: 46px;
+	}
+
+	.btn-main_work {
+		margin: 51px 0;
+	}
+}
+
+@media screen and (max-width: 845px) {
+	.price__topic {
+		font-size: 35px;
+	} 
+
+	.price__options {
+		font-size: 15px;
+	}
+
+	@keyframes bird4 {
+  0% {
+    top: 340px;
+	    left: 740px;
+  }  
+  100% {
+    top: 153px;
+    	left: 550px;
+  }
+}
+}
+
+@media screen and (max-width: 780px) {
+	.burger {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.menu_footer {
+		margin-right: 50px;
+	}
+	.contacts_footer {
+		margin-right: 50px;
+	}
+}
+
+@media screen and (max-width: 664px) {
+	.social-media {
+		margin-top: 25px;
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 635px) {
+	.selfy {
+		margin: 0 auto;
+	}
+	
+	@keyframes bird4 {
+  0% {
+    top: 340px;
+	    left: 740px;
+  }  
+  100% {
+    top: 153px;
+    	left: 400px;
+  }
+}
+
+@keyframes bird3 {
+  0% {
+    top: 340px;
+	    left: 740px;
+  }  
+  100% {
+    top: 400px;
+    	left: 48px;
+  }
+}
+
+}
+
+@media screen and (max-width: 620px) {
+	.title {
+		font-size: 30px;
+		margin-top: 49px;
+	}
+
+	.work-block__item:nth-child(2) {
+		margin-top: 55px;
+	}
+
+	.work-block__item:nth-child(3) {
+		margin-top: 55px;
+	}
+
+	.work-block__item:nth-child(4) {
+		margin-top: 55px;
+	}
+
+	.work-block__text {
+		font-size: 16px;
+		margin-top: 18px;
+	}
+}	
+
+@media screen and (max-width: 600px) {
+	.btn-call-back_mini {
+		display: inline-block;
+	}
+
+	.contacts_heading .btn-call-back {
+		display: none;
+	}
+
+	.call {
+		font-size: 18px;
+		margin-top: 30px;
+	}
+
+	.menu {
+		margin-top: 30px;
+	}
+}
+
+@media screen and (max-width: 540px) {
+	.contacts_footer {
+		margin-top: 48px;
+		color: #8993ad;
+	}
+
+	.menu_footer {
+		margin-top: 48px;
+	}
+
+	.social-media .btn-call-back {
+	display: none;
+	}
+	
+	.social-media .btn-main {
+	display: block;
+	}
+
+	.contacts_heading {
+		margin-top: 20px;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.selfy__my-foto {
+		display: none;
+	}
+
+	.selfy__my-foto_320 {
+		display: block;
+	}
+
+	.selfy {
+		width: 224px;
+		min-height: 334px;
+		margin-top: 80px;
+	}
+
+	.bg-container_heading {
+		background-image: url(../img/bg_320.svg);
+		background-size: 100% auto;	
+	}
+
+	.birds_heading {
+		background-image: linear-gradient(to top, #fff 20%, #fa0891 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+		
+	}
+
+	.slider__picture_320 {
+		display: block;
+	}
+
+	.slider__picture_1024 {
+		display: none;
+	}
+
+	.list__item_mini {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 490px) {
+	@keyframes bird4 {
+  0% {
+    top: 340px;
+	    left: 740px;
+  }  
+  100% {
+    top: 153px;
+    	left: 300px;
+  }
+}
+}
+
+@media screen and (max-width: 470px) {
+	.burger {
+		width: 24px;
+		height: 18px;
+		background-size: cover;
+	}
+
+	.close__1 {
+		width: 24px;
+	}
+
+	.close__2 {
+		width: 24px;
+		
+	}
+
+	.visit-card-mini__name_mini {
+		font-size: 28px;
+		
+	}
+
+	.visit-card-mini__profession_mini {
+		font-size: 16px;
+		margin-top: 13px;
+	}
+
+	.btn-main_mini {
+		font-size: 16px;
+		margin-top: 26px;
+	}
+	
+	.icons {
+		margin-top: 50px;
+	}
+
+	.copyright {
+		height: 50px;
+		padding-top: 20px;
+		font-size: 12px;
+	}
+
+	.slider__picture {
+		width: 282px;
+	}
+
+	.slider__text {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.price__topic {
+		font-size: 28px;
+		line-height: 40px;
+	}
+
+	.fixed-container {
+		padding: 0 20px;
+	}
+
+	.birds_heading  {
+	background-image: linear-gradient(to top left, #f26522 30%, #fa0891 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;	
+	}	
+	
+	.birds__bird1 {
+		font-size: 22px;
+	}
+
+	.birds__bird3 {
+		font-size: 28px;
+	}
+
+	.birds__bird4 {
+		font-size: 14px;
+	}
+
+	.birds__bird5 {
+		font-size: 16px;
+		display: block;
+	}
+
+	@keyframes bird1 {
+	  0% {
+	    top: 340px;
+		    left: 740px;
+	  }  
+	  100% {
+	    top: 100px;
+	    	left: 49px;
+	  }
+	}
+
+	@keyframes bird3 {
+	  0% {
+	    top: 340px;
+		    left: 740px;
+	  }  
+	  100% {
+	    top: 210px;
+	    	left: 37px;
+	  }
+	}
+
+	@keyframes bird4 {
+	  0% {
+	    top: 340px;
+		    left: 740px;
+	  }  
+	  100% {
+	    top: 145px;
+	    	left: 247px;
+	  }
+	}
+
+	@keyframes bird5 {
+	  0% {
+	    top: 340px;
+		    left: 740px;
+	  }  
+	  100% {
+	    top: 85px;
+	    	left: 175px;
+	  }
+	}
+
+	.work-block__pic_320 {
+		display: inline-block;
+	}
+
+	.work-block__pic {
+		display: none;
+	}
+
+	.contacts_heading {
+		font-size: 18px;
+	}
+
+	.contacts_footer {
+		font-size: 20px;
+	}
+
+	.list__item_footer {
+		font-size: 15px;
+	}
+
+	.work > .fixed-container {
+		padding: 0 20px;
+	}
+}
+ 
