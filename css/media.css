@@ -1,6 +1,6 @@
 @media screen and (max-width: 1810px) {
-	.selfy__my-foto {
-		margin-left: 0;
+	.selfy {
+		margin-right: 0;
 	}
 
 @keyframes bird1 {
@@ -9,7 +9,7 @@
 	    left: 740px;
   }  
   100% {
-    top: 159px;
+    top: 78px;
     	left: 77px;
   }
 }
@@ -20,7 +20,7 @@
 	    left: 740px;
   }  
   100% {
-    top: 153px;
+    top: 72px;
     	left: 888px;
   }
 }
@@ -31,7 +31,7 @@
 	    left: 740px;
   }  
   100% {
-    top: 639px;
+    top: 558px;
     	left: 58px;
   }
 }
@@ -42,7 +42,7 @@
 	    left: 740px;
   }  
   100% {
-    top: 588px;
+    top: 507px;
     	left: 361px;
   }
 }
@@ -53,7 +53,7 @@
 	    left: 740px;
   }  
   100% {
-    top: 240px;
+    top: 159px;
     	left: 423px;
   }
 }
@@ -130,9 +130,52 @@
 		font-size: 45px;
 	}
 
-	.menu_heading .list {
+	.list_heading {
+		background-image: linear-gradient(to top,#fff, #f26522 20%, #fa0891 80%, #fff 100%); 
+		border: 1px solid #fff;
+		border-radius: 10%;
+		position: absolute;
+		left: 10;
+		top: 70px;
 		display: none;
+		padding: 20px 40px;
+		z-index: 20;
+		opacity: 0.95;
 	}
+	
+	.list__item_heading {
+		display: block;
+		margin-bottom: 30px;
+		font-size: 20px;
+	}
+
+	.list__link_heading {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.list__link_heading:after {
+		display: block;
+		content: "";
+		width: 0;
+		height: 1px;
+		background-color: #fff;
+		transition: width 0.3s ease-in;
+	}
+
+	.list__link_heading:hover {
+		text-decoration: none;
+		color: #fff;
+	}
+
+	.list__link_heading:hover:after {
+		width: 100%;
+	}
+
+	.list__link_heading:active {
+		text-shadow: 0 0 25px #fff;
+	}
+	
 
 	.burger {
 		display: inline-block;
@@ -227,7 +270,7 @@
 @media screen and (max-width: 1090px) {
 	.bg-container_heading {
 		background-image: url(../img/Ellipse_1_1024.svg);
-		background-position: right bottom;
+		background-position: right  bottom;
 		background-repeat: no-repeat;
 	}
 
@@ -250,13 +293,6 @@
 		height: 55px;
 	}
 
-	.slider__item:nth-child(1) {
-		display: none;
-	}
-
-	.slider {
-		justify-content: center;
-	}
 }
 
 @media screen and (max-width: 960px) {
@@ -282,7 +318,7 @@
 	    left: 740px;
   }  
   100% {
-    top: 153px;
+    top: 72px;
     	left: 750px;
   }
 }
@@ -315,16 +351,39 @@
 }
 
 @media screen and (max-width: 865px) {
-	.visit-card {
-		display: none;
+	.bg-container_heading {
+		background-position: right bottom 212px;
+	}
+
+	.intro .fixed-container {
+		flex-direction: column-reverse;
 	}
 
 	.selfy {
 		margin: 55px auto 0;
 	}
 
-	.visit-card-mini {
-		display: block;
+	.visit-card {
+		
+		background-color: #fff;
+		text-align: center;
+		margin-top: 0;
+		padding-top: 18px;
+		margin-left: -40px;
+		margin-right: -40px;
+	}
+
+
+	.visit-card-mini__name {	
+		font-size: 45px;
+		font-family: Roboto-Black, sans-serif;
+		color: #1f1f24;	
+	}
+
+	.visit-card__profession {
+		margin: 28px auto 0;
+		font-size: 20px;
+		color: #8993ad;
 	}
 
 	.birds__bird5 {
@@ -355,7 +414,7 @@
 	    left: 740px;
   }  
   100% {
-    top: 153px;
+    top: 72px;
     	left: 550px;
   }
 }
@@ -364,6 +423,38 @@
 @media screen and (max-width: 780px) {
 	.burger {
 		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.bg-container_heading {
+		background-image: url(../img/bg_320.svg);
+	}
+
+	.selfy__my-foto {
+		margin-bottom: -4px;
+	}
+
+	@keyframes bird3 {
+	  0% {
+	    top: 340px;
+		    left: 740px;
+	  }  
+	  100% {
+	    top: 300px;
+	    	left: 58px;
+	  }
+	}
+
+	@keyframes bird4 {
+	  0% {
+	    top: 340px;
+		left: 740px;
+	  }  
+	  100% {
+	    top: 40px;
+	    left: 550px;
+	  }
 	}
 }
 
@@ -384,9 +475,6 @@
 }
 
 @media screen and (max-width: 635px) {
-	.selfy {
-		margin: 0 auto;
-	}
 	
 	@keyframes bird4 {
   0% {
@@ -394,7 +482,7 @@
 	    left: 740px;
   }  
   100% {
-    top: 153px;
+    top: 40px;
     	left: 400px;
   }
 }
@@ -405,7 +493,7 @@
 	    left: 740px;
   }  
   100% {
-    top: 400px;
+    top: 319px;
     	left: 48px;
   }
 }
@@ -437,11 +525,16 @@
 }	
 
 @media screen and (max-width: 600px) {
-	.btn-call-back_mini {
-		display: inline-block;
+	.btn-call-back_heading {
+		width: 26px;
+		height: 26px;
+		background-image: url(../img/call_back_button.png);
+		background-repeat: no-repeat;
+		border: none;
+		border-radius: 50%;		
 	}
 
-	.contacts_heading .btn-call-back {
+	.btn-call-back_heading span {
 		display: none;
 	}
 
@@ -476,20 +569,14 @@
 	.contacts_heading {
 		margin-top: 20px;
 	}
+
+	.popup {
+		width: 300px;
+	}
 }
 
 @media screen and (max-width: 520px) {
-	.selfy__my-foto {
-		display: none;
-	}
-
-	.selfy__my-foto_320 {
-		display: block;
-	}
-
 	.selfy {
-		width: 224px;
-		min-height: 334px;
 		margin-top: 80px;
 	}
 
@@ -525,34 +612,40 @@
 	    left: 740px;
   }  
   100% {
-    top: 153px;
+    top: 72px;
     	left: 300px;
   }
 }
 }
 
 @media screen and (max-width: 470px) {
+	.bg-container_heading {
+		background-position: right bottom 184px;
+	}
+
 	.burger {
 		width: 24px;
 		height: 18px;
 		background-size: cover;
 	}
 
-	.close__1 {
+	.close::before {
 		width: 24px;
+		height: 3px;
 	}
 
-	.close__2 {
+	.close::after {
 		width: 24px;
-		
+		height: 3px;
+		top: 0;
 	}
 
-	.visit-card-mini__name_mini {
+	.visit-card__name {
 		font-size: 28px;
 		
 	}
 
-	.visit-card-mini__profession_mini {
+	.visit-card__profession {
 		font-size: 16px;
 		margin-top: 13px;
 	}
@@ -620,7 +713,7 @@
 		    left: 740px;
 	  }  
 	  100% {
-	    top: 100px;
+	    top: 19px;
 	    	left: 49px;
 	  }
 	}
@@ -631,7 +724,7 @@
 		    left: 740px;
 	  }  
 	  100% {
-	    top: 210px;
+	    top: 129px;
 	    	left: 37px;
 	  }
 	}
@@ -642,7 +735,7 @@
 		    left: 740px;
 	  }  
 	  100% {
-	    top: 145px;
+	    top: 64px;
 	    	left: 247px;
 	  }
 	}
@@ -653,17 +746,9 @@
 		    left: 740px;
 	  }  
 	  100% {
-	    top: 85px;
+	    top: 4px;
 	    	left: 175px;
 	  }
-	}
-
-	.work-block__pic_320 {
-		display: inline-block;
-	}
-
-	.work-block__pic {
-		display: none;
 	}
 
 	.contacts_heading {
