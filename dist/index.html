@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Александр Михайлё, frontend developer</title>
 	<link rel="stylesheet" href="css/main.min.css">
@@ -19,7 +18,7 @@
             <span>&times;</span>
           </button>
         </div>
-        <form class="popup__form popup__form-js" action="" method="">
+        <form class="popup__form popup__form-js" action="telegram.php" method="POST">
             <div class="popup__body">                
                     <label for="cb_user_name">Ваше Имя</label>
                     <input class="popup__input" type="text" name="user_name" id="cb_user_name">
@@ -48,9 +47,8 @@
             <span>&times;</span>
           </button>
         </div>
-        <form action="" method="">
-            <div class="popup__body">
-                
+        <form action="telegram.php" method="POST">
+            <div class="popup__body">                
                     <label for="fb_user_name">Ваше Имя</label>
                     <input class="popup__input" type="text" name="user_name" id="fb_user_name">
                     <label for="fb_user_phone">Номер телефона</label>
@@ -67,8 +65,7 @@
                         </div>
                     </div>
                     <label for="comment">Комментарий</label>
-                    <textarea class="popup__input popup__input-comment" name="user_comments" id="comment" cols="30" rows="10"></textarea>
-                
+                    <textarea class="popup__input popup__input-comment" name="user_comments" id="comment" cols="30" rows="10"></textarea>                
             </div>
 
             <div class="popup__footer">       
@@ -230,33 +227,33 @@
                     <a href="http://ekproduction.ru">
                         <picture>
                             <source media="(max-width: 576px)" srcset="img/korzh-site-320.png">
-                            <img src="img/korzh-site.png" alt="Сайт видеографа Евгения Коржавина" class="slider__picture">
-                            <figcaption class="slider__text">
-                                Сайт видеографа Евгения Коржавина<br>  
-                            </figcaption>
+                            <img src="img/korzh-site.png" alt="Сайт видеографа Евгения Коржавина" class="slider__picture">                            
                         </picture>
+                        <div class="slider__text">
+                            Сайт видеографа Евгения Коржавина<br>  
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="https://github.com/Mikhayle/genesisgroup">
                         <picture>
                             <source media="(max-width: 576px)" srcset="img/genesisgroup-320.png">
-                            <img src="img/genesisgroup.png" alt="Сайт для IT компании Genesis Group" class="slider__picture">
-                            <figcaption class="slider__text">
-                                Landing Page для IT компании Genesis Group (github репозиторий)
-                            </figcaption>
+                            <img src="img/genesisgroup.png" alt="Сайт для IT компании Genesis Group" class="slider__picture">                            
                         </picture>
+                        <div class="slider__text">
+                            Landing Page для IT компании Genesis Group (github репозиторий)
+                        </div>
                     </a>
                 </div>
                 <div class="swiper-slide">
                     <a href="https://github.com/Mikhayle/Drharness">
                         <picture>
                             <source media="(max-width: 576px)" srcset="img/dr-harness-320.png">
-                            <img src="img/dr-harness.png" alt="Верстка страницы для продажи портупей Dr. Harness" class="slider__picture">
-                            <figcaption class="slider__text">
-                                Верстка портупей Dr. Harness (github репозиторий)
-                            </figcaption>
+                            <img src="img/dr-harness.png" alt="Верстка страницы для продажи портупей Dr. Harness" class="slider__picture">                            
                         </picture>
+                        <div class="slider__text">
+                            Верстка портупей Dr. Harness (github репозиторий)
+                        </div>
                     </a>
                 </div>
             </div>
@@ -273,17 +270,17 @@
         </button>
     </div>
 </section>
-		<section class="price" id="price">
+<section class="price" id="price">
     <div class="birds birds_price birds__bird1 birds__bird1_price">{&nbsp;}</div>
-<div class="birds birds_price birds__bird2 birds__bird2_price">&lt;div&gt;</div>	
-<div class="birds birds_price birds__bird3 birds__bird3_price">#</div>
-<div class="birds birds_price birds__bird4 birds__bird4_price">&lt;div&gt;</div>
-<div class="birds birds_price birds__bird5 birds__bird5_price">{ }</div>
+    <div class="birds birds_price birds__bird2 birds__bird2_price">&lt;div&gt;</div>	
+    <div class="birds birds_price birds__bird3 birds__bird3_price">#</div>
+    <div class="birds birds_price birds__bird4 birds__bird4_price">&lt;div&gt;</div>
+    <div class="birds birds_price birds__bird5 birds__bird5_price">{ }</div>
     <div class="container price__container">
-        <p class="price__text">
+        <h2 class="price__text">
             Адаптивная вёрстка под все устройства<br>
             и браузеры от 1000 рублей всего за 4 часа. <span>*</span>
-        </p>
+        </h2>
         <p class="price__subtext">
             <span>*</span> Срок и стоимость могут отличаться от заявленных и рассчитываются  индивидуально,
             в зависимости от сложности задач.
