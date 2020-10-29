@@ -21,9 +21,9 @@
         <form class="popup__form popup__form-js" action="telegram.php" method="POST">
             <div class="popup__body">                
                     <label for="cb_user_name">Ваше Имя</label>
-                    <input class="popup__input" type="text" name="user_name" id="cb_user_name">
+                    <input class="popup__input" type="text" required name="user_name" id="cb_user_name">
                     <label for="cb_user_phone">Номер телефона</label>
-                    <input class="popup__input popup__input-phone" type="text" name="user_phone" id="cb_user_phone" maxlength="14" placeholder="(***)***-****">                
+                    <input class="popup__input popup__input-phone" type="text" required name="user_phone" id="cb_user_phone" maxlength="14" placeholder="(***)***-****">                
             </div>
 
             <div class="popup__footer">       
@@ -50,9 +50,9 @@
         <form action="telegram.php" method="POST">
             <div class="popup__body">                
                     <label for="fb_user_name">Ваше Имя</label>
-                    <input class="popup__input" type="text" name="user_name" id="fb_user_name">
+                    <input class="popup__input" type="text" required name="user_name" id="fb_user_name">
                     <label for="fb_user_phone">Номер телефона</label>
-                    <input class="popup__input popup__input-phone" type="text" name="user_phone" id="fb_user_phone" maxlength="14" placeholder="(***)***-****">
+                    <input class="popup__input popup__input-phone" type="text" required minlength="6" name="user_phone" id="fb_user_phone" maxlength="14" placeholder="(***)***-****">
                     <label for="input-connect">Предпочитаемый вид связи</label><br>
                     <div class="popup__input popup__input-connect" id="input-connect">
                         <div class="col">
@@ -65,7 +65,7 @@
                         </div>
                     </div>
                     <label for="comment">Комментарий</label>
-                    <textarea class="popup__input popup__input-comment" name="user_comments" id="comment" cols="30" rows="10"></textarea>                
+                    <textarea class="popup__input popup__input-comment" required name="user_comments" id="comment" cols="30" rows="10"></textarea>                
             </div>
 
             <div class="popup__footer">       
@@ -80,9 +80,9 @@
 </div>
 	<header class="header">
     <div class="container header__container">
-        <div class="header__burger">
+        <button class="header__burger">
             <span></span>
-        </div>
+        </button>
         <nav class="header__menu menu">
             <ul class="header__list">
                 <li class="header__list-item">
@@ -96,12 +96,10 @@
                 </li>
             </ul>
         </nav>
-        <div class="header__contact">
-            <div class="phone header__phone">
-                <a href="tel:+79110349728" class="header__phone-link">
-                    +7 (911) 034-97-28
-                </a>
-            </div>
+        <div class="header__contact">            
+            <a href="tel:+79110349728" class="header__phone-link">
+                +7 (911) 034-97-28
+            </a>           
             <button class="btn-callback btn-callback-js">
                 <span>Заказать звонок</span>   
             </button>
@@ -159,8 +157,8 @@
         <h2 class="title skills__title">
             Что я делаю
         </h2>
-        <div class="skills__content">
-            <div class="item-skills">
+        <ul class="skills__content">
+            <li class="item-skills">
                 <div class="item-skills__icon">
                     <picture>
                         <source srcset="img/work-pic-1_320.png" media="(max-width: 768px)">
@@ -171,8 +169,8 @@
                     Вёрстка лендинг–страниц <br>
                     и сайтов любой сложности
                 </div>
-            </div>
-            <div class="item-skills">
+            </li>
+            <li class="item-skills">
                 <div class="item-skills__icon">
                     <picture>
                         <source srcset="img/work-pic-2_320.png" media="(max-width: 768px)">
@@ -183,8 +181,8 @@
                     Адаптивная вёрстка под все
                     браузеры и устройства
                 </div>
-            </div>
-            <div class="item-skills">
+            </li>
+            <li class="item-skills">
                 <div class="item-skills__icon">
                     <picture>
                         <source srcset="img/work-pic-3_320.png" media="(max-width: 768px)">
@@ -195,8 +193,8 @@
                     Frontend–разработка <br>
                     и программирование
                 </div>
-            </div>
-            <div class="item-skills">
+            </li>
+            <li class="item-skills">
                 <div class="item-skills__icon">
                     <picture>
                         <source srcset="img/work-pic-4_320.png" media="(max-width: 768px)">
@@ -207,8 +205,8 @@
                     Исправление и доработка
                     существующей вёрстки
                 </div>
-            </div>
-        </div>
+            </li>
+        </ul>
         <button class="btn-main btn-main-js">
             Узнать стоимость
         </button>
@@ -270,12 +268,12 @@
         </button>
     </div>
 </section>
-<section class="price" id="price">
+		<section class="price" id="price">
     <div class="birds birds_price birds__bird1 birds__bird1_price">{&nbsp;}</div>
-    <div class="birds birds_price birds__bird2 birds__bird2_price">&lt;div&gt;</div>	
-    <div class="birds birds_price birds__bird3 birds__bird3_price">#</div>
-    <div class="birds birds_price birds__bird4 birds__bird4_price">&lt;div&gt;</div>
-    <div class="birds birds_price birds__bird5 birds__bird5_price">{ }</div>
+<div class="birds birds_price birds__bird2 birds__bird2_price">&lt;div&gt;</div>	
+<div class="birds birds_price birds__bird3 birds__bird3_price">#</div>
+<div class="birds birds_price birds__bird4 birds__bird4_price">&lt;div&gt;</div>
+<div class="birds birds_price birds__bird5 birds__bird5_price">{ }</div>
     <div class="container price__container">
         <h2 class="price__text">
             Адаптивная вёрстка под все устройства<br>
@@ -323,23 +321,19 @@
         <div class="footer__socail-media">
             <ul class="footer__sm-list">
                 <li class="footer__sm-list-item">
-                    <a href="https://vk.com/mikhaylyo" class="footer__sm-link">
-                        <div class="social-icons footer__vk"></div>
+                    <a href="https://vk.com/mikhaylyo" target="_blank" class="footer__sm-link footer__vk">                        
                     </a>
                 </li>
                 <li class="footer__sm-list-item">
-                    <a href="https://www.facebook.com/profile.php?id=100006789346859" class="footer__sm-link">
-                        <div class="social-icons footer__fb"></div>
+                    <a href="https://www.facebook.com/profile.php?id=100006789346859" target="_blank" class="footer__sm-link footer__fb">                        
                     </a>
                 </li>
                 <li class="footer__sm-list-item">
-                    <a href="" class="footer__sm-link">
-                        <div class="social-icons footer__twitter"></div>
+                    <a href="#" target="_blank" class="footer__sm-link footer__twitter">                       
                     </a>
                 </li>
                 <li class="footer__sm-list-item">
-                    <a href="https://www.instagram.com/amiko12/" class="footer__sm-link">
-                        <div class="social-icons footer__insta"></div>
+                    <a href="https://www.instagram.com/amiko12/" target="_blank" class="footer__sm-link footer__insta">
                     </a>
                 </li>
             </ul>
