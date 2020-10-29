@@ -8,6 +8,12 @@
 *
     margin: 0
     padding: 0
+    &:active        
+        outline: none
+    &:focus
+        outline: none
+    &:focus-visible               
+        outline: 1px solid $grey
 
 ul
     list-style: none
@@ -15,9 +21,9 @@ ul
 a
     text-decoration: none
 
-button 
+button     
     cursor: pointer
-
+    
 
 body
     font-family: "Roboto-Regular", sans-serif
