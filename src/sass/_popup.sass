@@ -11,7 +11,7 @@
         margin: 0 auto
     @media screen and ( max-height: 440px )            
             transform: translateY(5px)
-    &__close 
+    
     &-container 
         display: none
         position: fixed
@@ -31,7 +31,9 @@
         @media screen and ( max-height: 360px )
             margin-bottom: 5px
             padding-bottom: 10px
-    &__close 
+    &__close:active                
+        outline: none
+        border: none 
             
     &__title 
         font-size: 20px
@@ -46,9 +48,7 @@
         @media screen and (max-height: 690px)
             margin: 5px  0
     &__input:focus 
-        outline-color: $pink
-
-    
+        outline: 2px solid $pink   
     &__form label 
         color: #8993ad
     &__input-connect,
