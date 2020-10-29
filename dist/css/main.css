@@ -1012,6 +1012,18 @@ button.swiper-pagination-bullet {
   padding: 0;
 }
 
+*:active {
+  outline: none;
+}
+
+*:focus {
+  outline: none;
+}
+
+*:focus-visible {
+  outline: 1px solid #8993ad;
+}
+
 ul {
   list-style: none;
 }
@@ -1053,7 +1065,6 @@ h3 {
   background-color: inherit;
   border: 1px solid #ff2f96;
   color: #f53f4f;
-  outline: none;
   font-size: 16px;
   transition: background-color 0.3s ease-out, color 0.3s ease-out, border 0.3s ease-out;
 }
@@ -1076,7 +1087,6 @@ h3 {
   font-size: 18px;
   color: #fff;
   border: none;
-  outline: none;
   transition: background-color 0.3s ease-out, color 0.3s ease-out, border 0.3s ease-out;
 }
 
@@ -1464,6 +1474,11 @@ h3 {
   border-bottom: 2px solid #8993ad;
 }
 
+.popup__close:active {
+  outline: none;
+  border: none;
+}
+
 .popup__title {
   font-size: 20px;
 }
@@ -1481,7 +1496,7 @@ h3 {
 }
 
 .popup__input:focus {
-  outline-color: #ff2f96;
+  outline: 2px solid #ff2f96;
 }
 
 .popup__form label {
@@ -1496,7 +1511,6 @@ h3 {
   font-size: 20px;
   font-weight: 700;
   background: none;
-  outline: none;
   border: none;
   transition: transform 0.5s ease;
 }
@@ -1513,7 +1527,6 @@ h3 {
   border: 1px solid #ff2f96;
   color: #f53f4f;
   background: none;
-  outline: none;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -1569,7 +1582,8 @@ h3 {
   margin-left: auto;
 }
 
-.header__phone {
+.header__phone-link {
+  color: #1f1f24;
   font-size: 25px;
   font-weight: 700;
   line-height: 54px;
@@ -1578,13 +1592,9 @@ h3 {
   transition: transform 0.2s ease-out;
 }
 
-.header__phone:hover {
+.header__phone-link:hover {
   transform: scale(1.05);
   transition: transform 0.2s ease-in;
-}
-
-.header__phone-link {
-  color: #1f1f24;
 }
 
 .hero {
@@ -1740,7 +1750,6 @@ h3 {
   cursor: pointer;
   position: absolute;
   z-index: 10;
-  outline: none;
   top: 372px;
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
@@ -1871,21 +1880,25 @@ h3 {
   display: flex;
 }
 
-.social-icons {
+.footer__sm-list-item {
   margin-right: 30px;
+}
+
+.footer__sm-link {
+  display: block;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
   transition: all 0.2s ease-out;
 }
 
-.social-icons:hover {
+.footer__sm-link:hover {
   box-shadow: 0 0 #8993ad;
   transition: all 0.2s ease-in;
 }
 
 .footer__vk {
   width: 35px;
-  height: 25px;
+  height: 29px;
   background-position: 0 -4px;
 }
 
