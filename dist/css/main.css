@@ -1021,7 +1021,7 @@ button.swiper-pagination-bullet {
 }
 
 *:focus-visible {
-  outline: 1px solid #8993ad;
+  outline: 2px solid black;
 }
 
 ul {
@@ -1499,8 +1499,13 @@ h3 {
   outline: 2px solid #ff2f96;
 }
 
-.popup__form label {
+.popup__form label,
+.popup__type-connect {
   color: #8993ad;
+}
+
+.popup__input-connect {
+  margin-bottom: 20px;
 }
 
 .popup__input-comment {
@@ -1542,7 +1547,7 @@ h3 {
 
 .header__container {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   padding-top: 30px !important;
 }
 
@@ -1579,6 +1584,7 @@ h3 {
 
 .header__contact {
   display: flex;
+  align-items: center;
   margin-left: auto;
 }
 
@@ -1588,7 +1594,6 @@ h3 {
   font-weight: 700;
   line-height: 54px;
   margin-right: 35px;
-  margin-top: -9px;
   transition: transform 0.2s ease-out;
 }
 
@@ -1652,7 +1657,6 @@ h3 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 103px;
 }
 
 .skills__title {
@@ -1690,6 +1694,10 @@ h3 {
   line-height: 30px;
   margin-top: 13px;
   text-align: center;
+}
+
+.btn-main_skills {
+  margin-bottom: 103px;
 }
 
 .portfolio {
@@ -2321,6 +2329,8 @@ h3 {
     width: 45px;
     height: 32px;
     z-index: 20;
+    border: none;
+    background-color: transparent;
   }
 
   .header__burger span {
@@ -2532,6 +2542,29 @@ h3 {
 }
 
 @media screen and (max-width: 768px) {
+@-webkit-keyframes bird1 {
+    0% {
+      top: 340px;
+      left: 740px;
+    }
+
+    100% {
+      top: 27px;
+      left: 77px;
+    }
+}
+@keyframes bird1 {
+    0% {
+      top: 340px;
+      left: 740px;
+    }
+
+    100% {
+      top: 27px;
+      left: 77px;
+    }
+}
+
 @-webkit-keyframes bird3 {
     0% {
       top: 340px;
@@ -2543,6 +2576,7 @@ h3 {
       left: 310px;
     }
 }
+
 @keyframes bird3 {
     0% {
       top: 340px;
@@ -2590,6 +2624,18 @@ h3 {
 
   .header__phone {
     font-size: 18px;
+  }
+
+  .hero__content {
+    padding-top: 110px;
+  }
+
+  .hero__title {
+    font-size: 50px;
+  }
+
+  .hero__subtitle {
+    margin-bottom: 40px;
   }
 
   .item-skills {
@@ -2643,7 +2689,7 @@ h3 {
     }
 
     100% {
-      top: 319px;
+      top: 276px;
       left: 48px;
     }
 }
@@ -2654,7 +2700,7 @@ h3 {
     }
 
     100% {
-      top: 319px;
+      top: 276px;
       left: 48px;
     }
 }
@@ -2667,6 +2713,14 @@ h3 {
 
   .title {
     font-size: 30px;
+  }
+
+  .header__container {
+    padding-top: 25px !important;
+  }
+
+  .header__phone-link {
+    font-size: 20px;
   }
 
   .hero {
@@ -2682,6 +2736,10 @@ h3 {
     padding-top: 0;
     margin-top: 18px;
     text-align: center;
+  }
+
+  .hero__title {
+    font-size: 30px;
   }
 
   .hero__foto {
@@ -2718,6 +2776,10 @@ h3 {
 
   .item-skills:nth-child(1) {
     margin-bottom: 55px;
+  }
+
+  .btn-main_skills {
+    margin-bottom: 0;
   }
 
   .portfolio__title {
@@ -2919,7 +2981,7 @@ h3 {
     }
 
     100% {
-      top: 64px;
+      top: 34px;
       left: 247px;
     }
 }
@@ -2931,7 +2993,7 @@ h3 {
     }
 
     100% {
-      top: 64px;
+      top: 34px;
       left: 247px;
     }
 }
@@ -2961,12 +3023,6 @@ h3 {
 }
 }
 
-@media screen and (max-width: 392px) {
-  .hero__title {
-    font-size: 30px;
-  }
-}
-
 @media screen and (max-width: 370px) {
   .hero__foto {
     background-image: url(../img/bg_320.svg);
@@ -2983,15 +3039,6 @@ h3 {
 @media screen and (max-height: 690px) {
   .popup {
     margin: 0 auto;
-  }
-
-  .popup__input {
-    margin: 5px  0;
-  }
-
-  .popup__input-connect,
-  .popup label[for="input-connect"] {
-    display: none;
   }
 
   .popup__btn {
@@ -3013,5 +3060,15 @@ h3 {
   .popup__header {
     margin-bottom: 5px;
     padding-bottom: 10px;
+  }
+}
+
+@media screen and (max-height: 570px) {
+  .popup__input {
+    margin: 5px  0;
+  }
+
+  .popup__input-connect {
+    display: none;
   }
 }

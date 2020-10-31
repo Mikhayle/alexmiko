@@ -2,9 +2,10 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Александр Михайлё, frontend developer</title>
+	<title>Александр Михайлё, frontend developer</title>
+	<link rel="icon" href="img/favicon.ico">
 	<link rel="stylesheet" href="css/main.min.css">
 	
 </head>
@@ -18,7 +19,7 @@
             <span>&times;</span>
           </button>
         </div>
-        <form class="popup__form popup__form-js" action="telegram.php" method="POST">
+        <form id="callback-form" class="popup__form popup__form-js" action="telegram.php" method="POST">
             <div class="popup__body">                
                     <label for="cb_user_name">Ваше Имя</label>
                     <input class="popup__input" type="text" required name="user_name" id="cb_user_name">
@@ -47,25 +48,22 @@
             <span>&times;</span>
           </button>
         </div>
-        <form action="telegram.php" method="POST">
+        <form id="feedback-form" class="popup__form popup__form-js" action="telegram.php" method="POST">
             <div class="popup__body">                
-                    <label for="fb_user_name">Ваше Имя</label>
-                    <input class="popup__input" type="text" required name="user_name" id="fb_user_name">
-                    <label for="fb_user_phone">Номер телефона</label>
-                    <input class="popup__input popup__input-phone" type="text" required minlength="6" name="user_phone" id="fb_user_phone" maxlength="14" placeholder="(***)***-****">
-                    <label for="input-connect">Предпочитаемый вид связи</label><br>
-                    <div class="popup__input popup__input-connect" id="input-connect">
-                        <div class="col">
-                            <input class="form-check-inline" id="phone-connect" type="checkbox" name="type-of-connect" value="По телефону">
-                            <label class="form-check-label" for="phone-connect">Звонок</label>
-                        </div>
-                        <div class="col">	
-                            <input class="form-check-inline" id="email-connect" type="checkbox" name="type-of-connect" value="По электронной почте">
-                            <label for="email-connect">E-mail</label>
-                        </div>
-                    </div>
-                    <label for="comment">Комментарий</label>
-                    <textarea class="popup__input popup__input-comment" required name="user_comments" id="comment" cols="30" rows="10"></textarea>                
+              <label for="fb_user_name">Ваше Имя</label>
+              <input class="popup__input" type="text" required name="user_name" id="fb_user_name">
+              <label for="fb_user_phone">Номер телефона</label>
+              <input class="popup__input popup__input-phone" type="tel" required minlength="6" name="user_phone" id="fb_user_phone" maxlength="14" placeholder="(***)***-****">
+              <div class="popup__type-connect">Предпочитаемый вид связи</div><br>
+              <div class="popup__input-connect">                  
+                <input id="phone-connect" type="checkbox" name="type-of-connect" value="По телефону">
+                <label for="phone-connect">Звонок</label>
+            
+                <input id="email-connect" type="checkbox" name="type-of-connect" value="По электронной почте">
+                <label for="email-connect">E-mail</label>                  
+              </div>
+              <label for="comment">Комментарий</label>
+              <textarea class="popup__input popup__input-comment" required name="user_comments" id="comment" cols="30" rows="10"></textarea>                
             </div>
 
             <div class="popup__footer">       
@@ -207,7 +205,7 @@
                 </div>
             </li>
         </ul>
-        <button class="btn-main btn-main-js">
+        <button class="btn-main btn-main_skills btn-main-js">
             Узнать стоимость
         </button>
     </div>
@@ -351,8 +349,7 @@
 	
 	<script src="js/main.min.js"></script>
 
-	<!-- Swiper JS -->
-	<script src="js/swiper.min.js"></script>
+	
 
 	<!-- Initialize Swiper -->
 	<script>
