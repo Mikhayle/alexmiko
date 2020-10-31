@@ -5,7 +5,6 @@
 @@include('webpcheck.js');
 
 $(document).ready(function(){
-
   const btnCallback = $('.btn-callback-js');
   const btnFeedback = $('.btn-main-js');
   const popupContainerCallback = $('.popup-container-callback-js');
@@ -22,12 +21,16 @@ $(document).ready(function(){
   const burger = $('.header__burger');
   const menu = $('.header__menu');
   const menuLink = $('.header__link');
+  const callbackForm = $('#callback-form');
+  const feedbackForm = $('#feedback-form');
 
 // отключение скролла страницы
   function disableScroll() {
-    $('html, body').on('mousewheel', function(){
-      return false;
-    });
+      $(window).on('scroll',() => {
+        let x = window.scrollX;
+        let y = window.scrollY;
+        window.scrollTo(x,y)
+    })
   };
 
 // включение скролла страницы
@@ -58,7 +61,7 @@ $(document).ready(function(){
     popupWindowFeedback.removeClass('popup-active');
   };
 // появление сообщения после отправки формы
-  function onSubmitForm() {
+  function onSubmitForm() {   
     popupHeader.hide();
     popupBody.hide();
     popupFooter.hide();
@@ -89,24 +92,56 @@ $(document).ready(function(){
 
 
   // открытие и закрытие меню при нажатии на бургер
-
   burger.on('click', function(){
     menu.toggleClass('active');
     $(this).toggleClass('active'); 
   });
-
+  // Клик по ссылке из мобильного меню
   menuLink.on('click', function(){
     if(menu.hasClass('active')) {
       menu.toggleClass('active');
       burger.toggleClass('active');
     };      
   });
-});
+
+  //Отправка формы без перезагрузки страницы
+  callbackForm.submit(function (e) { // Устанавливаем событие отправки для формы
+    e.preventDefault();
+    const form_data = $(this).serialize(); // Собираем все данные из формы
+    $.ajax({
+        type: "POST", // Метод отправки
+        url: "telegram.php", // Путь до php файла отправителя
+        data: form_data,
+        success: function(r) {
+        popupHeader.hide();
+        popupBody.hide();
+        popupFooter.hide();
+        popupAfter.fadeIn();
+        }
+    });
+  });
+
+  feedbackForm.submit(function (e) { // Устанавливаем событие отправки для формы
+    e.preventDefault();
+    const form_data = $(this).serialize(); // Собираем все данные из формы
+    $.ajax({
+        type: "POST", // Метод отправки
+        url: "telegram.php", // Путь до php файла отправителя
+        data: form_data,
+        success: function(r) {
+        popupHeader.hide();
+        popupBody.hide();
+        popupFooter.hide();
+        popupAfter.fadeIn();
+        }
+    });
+  });
+
   // маска для ввода номер телефона в форму обратной связи
-$(document).ready(function () {
-    $('.popup__input-phone').usPhoneFormat({
-        format: '(xxx) xxx-xxxx',
-    });   
+
+  $('.popup__input-phone').usPhoneFormat({
+      format: '(xxx) xxx-xxxx',
+  });   
 });
 
 

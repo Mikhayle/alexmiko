@@ -3,8 +3,11 @@
 
     &__container
         display: flex
-        align-items: baseline
-        padding-top: 30px !important    
+        align-items: center
+        padding-top: 30px !important
+        @media screen and ( max-width: 576px )
+            padding-top: 25px !important
+                
     &__menu
         &.active               
             transform: translateX(100%)  
@@ -46,19 +49,21 @@
         color: $pink
     &__contact
         display: flex
+        align-items: center
         margin-left: auto  
-    &__phone              
+    
+    &__phone-link
+        color: $main-color
         font-size: 25px
         font-weight: 700       
         line-height: 54px
         margin-right: 35px
-        margin-top: -9px
         transition: transform 0.2s ease-out
         &:hover
             transform: scale(1.05)
-            transition: transform 0.2s ease-in
-    &__phone-link
-        color: $main-color     
+            transition: transform 0.2s ease-in   
+        @media screen and ( max-width: 576px )
+            font-size: 20px
     @media screen and ( max-width: 1024px )
         &__burger 
             display: block
@@ -66,13 +71,15 @@
             width: 45px
             height: 32px
             z-index: 20
+            border: none
+            background-color: transparent
         &__burger span 
             width: 100%
             height: 4px
             position: absolute
             left: 0
             top: 14px
-            background: $gradient
+            background: $gradient           
         &__burger:before,
         &__burger:after 
             content: ''
